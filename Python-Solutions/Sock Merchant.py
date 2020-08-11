@@ -21,15 +21,15 @@ def sockMerchant(n, ar):
 
 
 if __name__ == '__main__':
-    #fptr = open(os.environ['OUTPUT_PATH'], 'w')
+    fptr = open(os.environ['OUTPUT_PATH'], 'w')
     n = int(input())
 
     ar = list(map(int, input().rstrip().split()))
 
     result = sockMerchant(n, ar)
 
-    print(result)
-    
-    #fptr.write(str(result) + '\n')
+    #print(result)
 
-    #fptr.close()
+    fptr.write(str(result) + '\n')
+
+    fptr.close()
